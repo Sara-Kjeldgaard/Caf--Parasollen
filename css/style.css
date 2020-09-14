@@ -2,3 +2,6 @@
  * file: css/style.css
  **/
 
+html {
+    scroll-behavior: smooth; /* Makes  scrolling smooth, rather than 'jumping' to the next section */
+}

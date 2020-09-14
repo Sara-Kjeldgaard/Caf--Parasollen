@@ -5,3 +5,75 @@
 html {
     scroll-behavior: smooth; /* Makes  scrolling smooth, rather than 'jumping' to the next section */
 }
+
+
+#nextScene {
+    
+}
+
+@keyframes float { /* Floating arrow; moves img down 20 px from starting location and back up in one fluid motion */
+	0% {
+		/*box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);*/ /* Square shadow beneath */ 
+		transform: translatey(0px);
+	}
+	50% {
+		/*box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);*/ /* Square shadow beneath */
+		transform: translatey(-20px);
+	}
+	100% {
+		/*box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);*/ /* Square shadow beneath */
+		transform: translatey(0px);
+	}
+}
+
+#nextSceneArrow {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+    
+	animation: float 3.5s ease-in-out infinite; /* calls the float animation, sets it to have a run time of 3.5 secs per loop, gives it a slow start and end, and runs it infinitely */
+}
+
+/**
+* Back to Top button by Matthew Cain (https://codepen.io/matthewcain/pen/ZepbeR)
+**/
+#button {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+/**
+* END of Back to Top button
+**/

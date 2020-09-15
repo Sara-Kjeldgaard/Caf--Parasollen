@@ -266,8 +266,11 @@ p {
 
 /***********************************************/
 /********* stylesheet for footer **************/
-.footer{
-    background-image: url(..//images/footer.jpg);
+footer{
+    background-image: url(/images/footer.jpg);
+    height: 800px;
+    background-size: cover;
+    position: center;
 }
 
 #socialmedie {

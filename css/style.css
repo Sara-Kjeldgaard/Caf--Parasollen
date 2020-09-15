@@ -207,13 +207,31 @@ body  {
 h2 {
     font-size: 30px;
     text-align: center;
-     padding-bottom: 100px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 p {
     font-size: 20px;
     line-height: 30px;
     
+}
+
+.title {
+    padding-bottom: 80px;
+}
+/***********************************************/
+/******* backgroundPicture stylesheet **********/
+
+#backgroundPicture1 {
+    background-image: url(/images/Coffee.jpg);
+
+}
+
+.fixed-background {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /***********************************************
@@ -263,6 +281,32 @@ p {
     display: flex;
     
 }
+
+/***********************************************/
+/****** stylesheet for page 2: videos **********/
+
+
+
+.video-interview {
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.video-interview video {
+    width: 45%;
+}
+
+.video-interview-text {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
 
 /***********************************************/
 /********* stylesheet for footer **************/

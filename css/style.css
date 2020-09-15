@@ -8,12 +8,14 @@ html {
 }
 
 body {
-    font: 12px/18px Arial, sans-serif;
+    font: 12px/18px 'Baloo Tammudu 2', cursive;
     /*font size / line height, font family (Arial, sans-serif), (font weight)*/
+    background-color: whitesmoke;
 
 }
 
-main {}
+main {
+}
 
 ******************************************************************** 
 ***************************** VIDEO ********************************
@@ -62,11 +64,11 @@ ul {
 
 .sidenav {
     position: fixed;
-    width: 175px;
-    z-index: 1; /* Stay at the top of other content */
+    width: auto;
+    z-index: 2; /* Stay at the top of other content */
     right: 0; /* Keep right */
     top: 40%; /*40% down on the page, approx. centered*/
-    background-color: darkred;
+    background-color: rgba(255,255,255,0.3);
     /* TEMPORARY */
     overflow-x: hidden;
     margin-left: auto;
@@ -75,10 +77,10 @@ ul {
 }
 
 .sidenav li {
-    padding: 10px 30px 10px 70px;
+    padding: 20px 30px 20px 70px;
     box-sizing: border-box;
     overflow-x: hidden;
-
+    font-size: 18px;
 }
 
 .sidenav li:hover {

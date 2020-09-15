@@ -13,10 +13,16 @@ body {
 
 }
 
-main {}
+main {
+    
+}
 
-******************************************************************** 
-***************************** VIDEO ********************************
+html, body, main {
+    width: 100%;
+    margin: 0;
+}
+/******************************************************************** 
+***************************** VIDEO ********************************/
 #landingpage {
     position: absolute;
     top: 0;
@@ -177,3 +183,97 @@ ul {
 /**
 * END of Back to Top button
 **/
+
+
+
+/***********************************************
+***************** Page design *****************/
+
+.page-design {
+    background-image: url(/images/background.png);
+    width: 100%;
+    /*  Vh = View Height. It's like % but instead of parent, it's a % of the window height.  */
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+body  {
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+     padding-bottom: 100px;
+}
+
+p {
+    font-size: 18px;
+}
+
+/***********************************************
+***************** Page 1: collage *************/
+
+
+#collage1 {
+    width: 300px;
+    top: 0;
+    z-index: 2;
+    right: 250px;
+    
+}
+
+#collage2 {
+     width: 300px;
+    right: 0;
+    top: 150px;
+    z-index: 3;
+}
+
+#collage3 {
+     width: 500px;
+    bottom: 0;
+    right: 200px;
+    z-index: 1;
+}
+
+#collage img {
+    position: absolute;
+}
+
+
+#collage {
+    width: 700px;
+    height: 700px;
+    position: relative;
+    
+}
+#collageText {
+    width: 400px;
+}
+
+
+#collageContent {
+    display: flex;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

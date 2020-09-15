@@ -33,6 +33,8 @@ $(document).ready(function () { // kører så snart DOM er klar
      * END of Back to Top Button by Matthew Cain
      **/
 
+    
+    
     // ... din kode slut ...
 
 }); // denne line må ikke slettes

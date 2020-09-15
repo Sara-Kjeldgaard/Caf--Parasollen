@@ -211,7 +211,9 @@ h2 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 30px;
+    
 }
 
 /***********************************************
@@ -253,6 +255,7 @@ p {
 }
 #collageText {
     width: 400px;
+    
 }
 
 

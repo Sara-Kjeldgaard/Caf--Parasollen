@@ -3,34 +3,81 @@
  **/
 
 html {
-    scroll-behavior: smooth; /* Makes  scrolling smooth, rather than 'jumping' to the next section */
+    scroll-behavior: smooth; /* Makes scrolling to next smooth, rather than 'jumping' to the next section */
 }
 
+body {
+    font: 12px/18px Arial, sans-serif; /*font size / line height, font family (Arial, sans-serif), (font weight)*/
 
-#nextScene {
+}
+
+main {
+}
+
+ul {
+    list-style-type: none;
+}
+
+.sidenav {
+    position: fixed; 
+    z index: 1; /* Stay at the top of other content */
+    right: 0; /* Keep right */
+    top: 40%;
+    background-color: darkred; /* TEMPORARY */
+    overflow-x: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 15px 5px 0px;
+}
+
+.sidenav li {
+    padding: 10px 0;
     
 }
+
+.sidenav li:hover {
+    background-color: maroon;
+    color: white;
+}
+
+.sidenav li:hover a {
+    color: inherit;
+}
+
+.sidenav a {
+    /*padding: 10px 0;*/
+    text-decoration: none;
+    
+    /*font-size: ;*/
+    color: black;
+    display: block;
+}
+
 
 @keyframes float { /* Floating arrow; moves img down 20 px from starting location and back up in one fluid motion */
 	0% {
 		/*box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);*/ /* Square shadow beneath */ 
+        filter: drop-shadow(0 0px 0.2px #D3D3D3);
 		transform: translatey(0px);
 	}
 	50% {
 		/*box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);*/ /* Square shadow beneath */
+        filter: drop-shadow(0 5px 0.2px #D3D3D3);
 		transform: translatey(-20px);
 	}
 	100% {
 		/*box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);*/ /* Square shadow beneath */
+        filter: drop-shadow(0 0px 0.2px #D3D3D3);
 		transform: translatey(0px);
 	}
 }
 
 #nextSceneArrow {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 6em;
+    position: fixed;
+    bottom: 0;
+    left: 47.5%;
+    width: 8em;
     
 	animation: float 3.5s ease-in-out infinite; /* calls the float animation, sets it to have a run time of 3.5 secs per loop, gives it a slow start and end, and runs it infinitely */
 }

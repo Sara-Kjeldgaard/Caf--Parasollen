@@ -237,7 +237,7 @@ p {
 
 #collage3 {
      width: 500px;
-    bottom: 0;
+    bottom: 80px;
     right: 200px;
     z-index: 1;
 }

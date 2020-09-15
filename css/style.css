@@ -264,9 +264,24 @@ p {
     
 }
 
+/***********************************************/
+/********* stylesheet for footer **************/
+.footer{
+    background-image: url(..//images/footer.jpg);
+}
 
-
-
+#socialmedie {
+    display: flex;
+    align-items: flex-start;
+}
+.icons {
+    width: 50px;
+    display: block;
+    margin-left: 10px;
+}
+.icons img {
+    width: 100%;
+}
 
 
 

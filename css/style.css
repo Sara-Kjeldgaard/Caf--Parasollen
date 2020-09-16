@@ -223,6 +223,7 @@ p {
     width: 700px;
     height: 700px;
     position: relative;
+    transform: translateY(-100px);
     
 }
 #collageText {

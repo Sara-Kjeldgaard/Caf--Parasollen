@@ -11,6 +11,24 @@ $(document).ready(function () { // kører så snart DOM er klar
     // ... din kode herfra ...
 
     /**
+    *   Navigation array
+    **/
+    
+    var menuLinks = [
+        "#landingpage",
+        "#collage",
+        "#interview",
+        "#quotes",
+        "#footer"
+        ];
+        
+        for (var i = 0; i < menuLinks.length; i++) {
+            document.getElementById( "menu" + i.toString() ).href =  menuLinks[i];
+            console.log(i);
+        }
+    
+    
+    /**
     * Video controls (find method to do it in ONE function rather than 2)
     **/
     var $btnRasmus = $("#interviewRasmusBtn");

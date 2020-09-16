@@ -301,7 +301,9 @@ p {
 
 #quotesContent {
     display: flex;
-    
+    width: 80%;
+    max-width: 1200px;
+    justify-content: space-around;
 }
 
 .quotes-and-pic {
@@ -310,8 +312,14 @@ p {
     
 }
 
+#veyisQuote {
+    margin-top: 120px;  
+}
+
 .quotes-and-pic q {
     display: block;
+    line-height: 30px;
+    margin-bottom: 15px;
 }
 
 .quotes-and-pic cite {
@@ -320,9 +328,25 @@ p {
 
 .interview-picture {
     width: 100%;
+    position: relative;
+    margin: 70px 0;
+    transform: rotate(15deg);
 }
+
+.interview-picture.counter-clockwise {
+    transform: rotate(-15deg);
+}
+
 .interview-picture img {
     width: 100%;
+}
+
+.interview-picture .audio-button {
+    position: absolute;
+    width: 15%;
+    left: 25px;
+    bottom: 10px;
+    cursor: pointer;
 }
 
 .quotes-and-pic .icons {

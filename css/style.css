@@ -240,7 +240,10 @@ p {
 /***********************************************/
 /****** stylesheet for page 2: videos **********/
 
-
+#interview {
+    padding-top: 200px;
+    box-sizing: border-box;
+}
 
 .video-interview {
     width: 80%;
@@ -250,8 +253,13 @@ p {
     margin-bottom: 40px;
 }
 
-.video-interview video {
+.video-content {
     width: 45%;
+    position: relative;
+}
+
+.video-content video {
+    width: 100%;
 }
 
 .video-interview-text {
@@ -272,20 +280,20 @@ p {
     text-align: center;
     border-radius: 4px;
     position: relative;
-    height: 75px;
+    padding: 10px 20px;;
     z-index: 2;
     border: 0;
+    position: absolute;
+    bottom: 40px;
 }
 
 #interviewRasmusBtn {
-    left: -550px;
-    top: 200px;
+    left: 0;
 }
 
 
 #interviewAllanBtn {
-    left: 550px;
-    top: 210px;
+    right: 0;
 }
 
 .btn-play-pause:hover {

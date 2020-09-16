@@ -66,6 +66,14 @@ $(document).ready(function () { // kører så snart DOM er klar
     });
     
   
+    
+$(window).scroll(function() {
+// here we call the fuktion makeParallaxScroll
+        makeParallaxScroll('#collage1', 9);
+        makeParallaxScroll('#collage2', 7);
+        makeParallaxScroll('#collage3', 8);
+    
+    });
 // We make a reusable function, that we can call as many times as we want.
     /* We use function and give it a name. Then we name two parameters whatToLookFor = the selector for the element we look for (img), howMuchEffect = The higher the number, the slower it will scroll*/
     function makeParallaxScroll(whatToLookFor, howMuchEffect) {

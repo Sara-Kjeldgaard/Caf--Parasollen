@@ -27,6 +27,7 @@ html, body, main {
     overflow: hidden;
     justify-content: center;
     padding-top: 0;
+    z-index: 2;
 
 }
 

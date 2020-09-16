@@ -15,10 +15,15 @@ body {
 }
 
 main {
+    
 }
 
-******************************************************************** 
-***************************** VIDEO ********************************
+html, body, main {
+    width: 100%;
+    margin: 0;
+}
+/******************************************************************** 
+***************************** VIDEO ********************************/
 #landingpage {
     position: absolute;
     top: 0;
@@ -179,3 +184,163 @@ ul {
 /**
 * END of Back to Top button
 **/
+
+
+
+/***********************************************
+***************** Page design *****************/
+
+.page-design {
+    background-image: url(/images/background.png);
+    width: 100%;
+    /*  Vh = View Height. It's like % but instead of parent, it's a % of the window height.  */
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+body  {
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 30px;
+    
+}
+
+.title {
+    padding-bottom: 80px;
+}
+/***********************************************/
+/******* backgroundPicture stylesheet **********/
+
+#backgroundPicture1 {
+    background-image: url(/images/Coffee.jpg);
+
+}
+
+.fixed-background {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/***********************************************
+***************** Page 1: collage *************/
+
+
+#collage1 {
+    width: 300px;
+    top: 0;
+    z-index: 2;
+    right: 250px;
+    
+}
+
+#collage2 {
+     width: 300px;
+    right: 0;
+    top: 150px;
+    z-index: 3;
+}
+
+#collage3 {
+     width: 500px;
+    bottom: 80px;
+    right: 200px;
+    z-index: 1;
+}
+
+#collage img {
+    position: absolute;
+}
+
+
+#collage {
+    width: 700px;
+    height: 700px;
+    position: relative;
+    
+}
+#collageText {
+    width: 400px;
+    
+}
+
+
+#collageContent {
+    display: flex;
+    
+}
+
+/***********************************************/
+/****** stylesheet for page 2: videos **********/
+
+
+
+.video-interview {
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.video-interview video {
+    width: 45%;
+}
+
+.video-interview-text {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+
+/***********************************************/
+/********* stylesheet for footer **************/
+footer{
+    background-image: url(/images/footer.jpg);
+    height: 800px;
+    background-size: cover;
+    position: center;
+
+}
+
+#socialmedie {
+    display: flex;
+    align-items: flex-start;
+}
+.icons {
+    width: 70px;
+    display: block;
+    margin-left: 10px;
+}
+.icons img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

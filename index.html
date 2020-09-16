@@ -21,10 +21,11 @@
         <!-- NAVIGATIONAL MENU - RIGHT -->
         <nav class="sidenav">
             <ul>
-                <li><a href="#landingpage">Velkommen til Café Parasollen!</a></li>
-                <li><a href="#section1">MENUPUNKT 2</a></li>
-                <li><a href="#section2">MENUPUNKT 3</a></li>
-                <li><a href="#section3">MENUPUNKT 4</a></li>
+                <li><a href="#landingpage">Velkommen</a></li>
+                <li><a href="#collage">Caféen</a></li>
+                <li><a href="#interview">Historier</a></li>
+                <li><a href="#quotes">Citater</a></li>
+                <li><a href="#footer">Parasollen</a></li>
             </ul>
         </nav>
 
@@ -47,7 +48,7 @@
         </section>
 
         <!--      page 1: parallax pictures      -->
-        <section class="page-design" id="section1">
+        <section class="page-design" id="collage">
             <h2 class="title">
                 Et sted med højt til loftet. Et sted hvor vi mødes.
             </h2>
@@ -76,7 +77,7 @@
         <section id="backgroundPicture1" class="page-design fixed-background"></section>
 
         <!--      page 2: video      -->
-        <section class="page-design" id="section2">
+        <section class="page-design" id="interview">
 
             <div class="video-interview">
                 <div class="video-interview-text">
@@ -87,11 +88,13 @@
                     <p>
                         Igennem denne video kan vi få et indblik i Rasmus' historie, og hvad der gør Parasollen til et fristed for ham. </p>
                 </div>
-                <video controls src="video/Rasmus%20Interview%20video.mov" type="video/mov">
+                <video class="interviewVideo" id="interviewVideoRasmus" src="video/Rasmus%20Interview%20video.mov" type="video/mov">
                 </video>
+                <button class="btn-play-pause" id="interviewRasmusBtn">Play/Pause</button>
             </div>
             <div class="video-interview">
-                <video controls src="video/Allan%20interview%20video.mov" type="video/mov">
+               <button class="btn-play-pause" id="interviewAllanBtn">Play/Pause</button>
+                <video class="interviewVideo" id="interviewVideoAllan" src="video/Allan%20interview%20video.mov" type="video/mov">
                 </video>
 
                 <div class="video-interview-text">
@@ -106,9 +109,13 @@
             </div>
 
         </section>
+        
+        <section class="page-design" id="quotes">
+        <!--------------------------------------------------------------------------------------------------------------->    
+        </section>
 
     </main>
-    <footer id="section3">
+    <footer id="footer">
         <button type="button" href="https://www.cafe-parasollen.dk/">Her er også plads til dig
         </button>
         <div id="socialedie">

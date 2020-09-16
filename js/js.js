@@ -11,6 +11,33 @@ $(document).ready(function () { // kører så snart DOM er klar
     // ... din kode herfra ...
 
     /**
+    * Video controls (find method to do it in ONE function rather than 2)
+    **/
+    var $btnRasmus = $("#interviewRasmusBtn");
+    var videoRasmus = $("#interviewVideoRasmus").get(0); /* get(0) henter den følgende funktion i JavaScript, frem for i JQuery */
+    
+    $btnRasmus.on('click', function () {
+        if (videoRasmus.paused) {
+            videoRasmus.play();
+        }
+        else {
+            videoRasmus.pause();
+        }
+    });
+    
+    var $btnAllan = $("#interviewAllanBtn");
+    var videoAllan = $("#interviewVideoAllan").get(0); /* get(0) henter den følgende funktion i JavaScript, frem for i JQuery */
+    
+    $btnAllan.on('click', function () {
+        if (videoAllan.paused) {
+            videoAllan.play();
+        }
+        else {
+            videoAllan.pause();
+        }
+    });
+    
+    /**
      * Back to Top button by Matthew Cain (https://codepen.io/matthewcain/pen/ZepbeR)
      **/
     var btn = $('#button');

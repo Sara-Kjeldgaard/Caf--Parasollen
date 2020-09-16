@@ -368,31 +368,41 @@ footer{
     background-image: url(/images/footer.jpg);
     height: 800px;
     background-size: cover;
-    position: center;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
 
 }
-#button{
-  background-color: rgba(188, 206, 216, 0.7);
-    color: black;
-    padding: 12px 20px;
+
+#footerButton{
+  background-color: #932929;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    padding: 40px 60px 35px;
     border: none;
-    border-radius: 4px;
+    border-radius: 50px;
     cursor: pointer;
-    margin-bottom: 10px;
+    margin-top: 280px;
     align-items: center;
-  
+    text-decoration: none;    
+    
 }
 
 #socialmedie {
     display: flex;
-    align-items:center;
-    margin-bottom: auto;
+   position: absolute;
+    bottom: 0;
+    left:0;
+   
 
 }
 .icons {
     width: 70px;
     display: block;
-    margin-left: 10px;
+    margin-left: 50px;
 }
 .icons img {
     width: 100%;

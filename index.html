@@ -85,19 +85,19 @@
                     <p>
                         Igennem denne video kan vi få et indblik i Rasmus' historie, og hvad der gør Parasollen til et fristed for ham. </p>
                 </div>
-                <div class="video-content">                   
-                    <video  id="interviewVideoRasmus" src="video/Rasmus%20Interview%20video.mov" type="video/mov">
+                <div class="video-content">
+                    <video id="interviewVideoRasmus" src="video/Rasmus%20Interview%20video.mov" type="video/mov">
                     </video>
                     <button class="btn-play-pause" id="interviewRasmusBtn">Play/Pause</button>
                 </div>
 
             </div>
             <div class="video-interview">
-              <div class="video-content">      
-                <button class="btn-play-pause" id="interviewAllanBtn">Play/Pause</button>
-                <video  id="interviewVideoAllan" src="video/Allan%20interview%20video.mov" type="video/mov">
-                </video>
-              </div>
+                <div class="video-content">
+                    <button class="btn-play-pause" id="interviewAllanBtn">Play/Pause</button>
+                    <video id="interviewVideoAllan" src="video/Allan%20interview%20video.mov" type="video/mov">
+                    </video>
+                </div>
 
                 <div class="video-interview-text">
                     <h2>Allan Majholm (daglig leder)</h2>
@@ -111,87 +111,61 @@
             </div>
 
         </section>
-        
-    <section id="backgroundPicture2" class="page-design fixed-background"></section>
 
-    <section class="page-design" id="quotes">
-        <h2 class="title">Citater</h2>
-        <div id="quotesContent">
-            <div class="quotes-and-pic">
-                <q
-                    >Jeg bruger caféen som et frirum, og en slags pause
-                    for både mig og min familie</q
-                >
-                <cite>
-                    -Rasmus, 32år
-                </cite>
-                <img
-                    class="icons"
-                    src="/images/ikon1.png"
-                    alt="ikon, heart in hand"
-                />
-                <div class="interview-picture counter-clockwise">
-                    <img
-                        src="/images/Philip.jpg"
-                        alt="picture, philip interview"
-                    />
-                    <img
-                        id="audioIconPhilip"
-                        class="audio-button"
-                        src="images/lydikon.png"
-                        alt="lyd ikon"
-                    />
+        <section id="backgroundPicture2" class="page-design fixed-background"></section>
+
+        <section class="page-design" id="quotes">
+            <h2 class="title">Citater</h2>
+            <div id="quotesContent">
+                <div class="quotes-and-pic">
+                    <q>Jeg bruger caféen som et frirum, og en slags pause
+                        for både mig og min familie</q>
+                    <cite>
+                        -Rasmus, 32år
+                    </cite>
+                    <img class="icons" src="/images/ikon1.png" alt="ikon, heart in hand" />
+                    <div class="interview-picture counter-clockwise">
+                        <img src="/images/Philip.jpg" alt="picture, philip interview" />
+                        <img id="audioIconPhilip" class="audio-button" src="images/lydikon.png" alt="lyd ikon" />
+                    </div>
+
+                    <audio id="audioPhilip">
+                        <source src="audio/Philip.mp3" type="audio/mp3" />
+                    </audio>
                 </div>
-            
-                <audio id="audioPhilip">
-                    <source src="audio/Philip.mp3" type="audio/mp3" />
-                </audio>
-            </div>
 
-            <div class="quotes-and-pic">
-                <div class="interview-picture">
-                    <img
-                        src="/images/Veyis.jpg"
-                        alt="picture, Veyis interview"
-                    />
-                    <img
-                        id="audioIconVeyis"
-                        class="audio-button"
-                        src="images/lydikon.png"
-                        alt="lyd ikon"
-                    />
+                <div class="quotes-and-pic">
+                    <div class="interview-picture">
+                        <img src="/images/Veyis.jpg" alt="picture, Veyis interview" />
+                        <img id="audioIconVeyis" class="audio-button" src="images/lydikon.png" alt="lyd ikon" />
+                    </div>
+
+                    <audio id="audioVeyis">
+                        <source src="audio/Veyis.mp3" type="audio/mp3" />
+                    </audio>
+
+                    <q id="veyisQuote">Vi bekymrer os for hinanden</q>
+                    <cite>
+                        -Veyis, 39år
+                    </cite>
+                    <img class="icons" src="/images/ikon2.png" alt="ikon, friends holding each other" />
                 </div>
-              
-                <audio id="audioVeyis">
-                    <source src="audio/Veyis.mp3" type="audio/mp3" />
-                </audio>
-
-                <q id="veyisQuote">Vi bekymrer os for hinanden</q>
-                <cite>
-                    -Veyis, 39år
-                </cite>
-                <img
-                    class="icons"
-                    src="/images/ikon2.png"
-                    alt="ikon, friends holding each other"
-                />
             </div>
-        </div>
-    </section>
-   
+        </section>
+
     </main>
-    <footer id="footer">
-        <a id="button" href="https://www.cafe-parasollen.dk/">
-        <button type="button" >Her er også plads til dig
-        </button>
-        </a>
-        <div id="socialedie">
-            <a class="icons" href="https://www.facebook.com/parasollenviby/">
-                <img src="images/119622471_784119675721897_7880520115338518760_n%20(1).gif" alt="fb" />
-            </a>
+    <footer>
+        <a id="footerButton" href="https://www.cafe-parasollen.dk/">Her er også plads til dig</a>
+
+        <div id="socialmedie">
 
             <a class="icons" href="https://www.instagram.com/cafeparasollenviby/">
                 <img src="images/119601479_356170518904336_5252120779309989875_n.gif" alt="insta" />
+            </a>
+
+
+            <a class="icons" href="https://www.facebook.com/parasollenviby/">
+                <img src="images/119622471_784119675721897_7880520115338518760_n%20(1).gif" alt="fb" />
             </a>
 
         </div>
@@ -202,4 +176,6 @@
 
     <!-- load JavaScript -->
     <script src="js/js.js"></script>
-</body></html>
+</body>
+
+</html>

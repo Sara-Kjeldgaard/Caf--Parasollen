@@ -37,33 +37,6 @@ $(document).ready(function () { // kører så snart DOM er klar
         }
     });
     
-    /**
-     * Back to Top button by Matthew Cain (https://codepen.io/matthewcain/pen/ZepbeR)
-     **/
-    var btn = $('#button');
-
-    $(window).scroll(function () {
-        // here we call the fuktion makeParallaxScroll
-        makeParallaxScroll('#collage1', 9);
-        makeParallaxScroll('#collage2', 7);
-        makeParallaxScroll('#collage3', 5);
-        
-        if ($(window).scrollTop() > 300) {
-            btn.addClass('show');
-        } else {
-            btn.removeClass('show');
-        }
-    });
-
-    btn.on('click', function (e) {
-        e.preventDefault();
-        $('html, body').animate({
-            scrollTop: 0
-        }, '300');
-    });
-    /**
-     * END of Back to Top Button by Matthew Cain
-     **/
 
   
 // We make a reusable function, that we can call as many times as we want.

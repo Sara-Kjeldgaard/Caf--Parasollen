@@ -134,54 +134,6 @@ ul {
     animation: float 1.6s ease-in-out infinite; /* calls the float animation, sets it to have a run time of 1.6 secs per loop, gives it a slow start and end, and runs it infinitely */
 }
 
-/**
-* Back to Top button by Matthew Cain (https://codepen.io/matthewcain/pen/ZepbeR)
-**/
-#button {
-    display: inline-block;
-    background-color: #FF9800;
-    width: 75px;
-    height: 75px;
-    text-align: center;
-    border-radius: 4px;
-    position: fixed;
-    bottom: 75px;
-    right: 260px;
-    transition: background-color .3s,
-        opacity .5s, visibility .5s;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 1000;
-}
-
-#button::after {
-    content: "\f077";
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 2em;
-    line-height: 50px;
-    color: #fff;
-}
-
-#button:hover {
-    cursor: pointer;
-    background-color: #333;
-}
-
-#button:active {
-    background-color: #555;
-}
-
-#button.show {
-    opacity: 1;
-    visibility: visible;
-}
-
-/**
-* END of Back to Top button
-**/
-
 
 
 /***********************************************

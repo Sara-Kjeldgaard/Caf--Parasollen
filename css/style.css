@@ -107,17 +107,17 @@ ul {
 
     /* Floating arrow; moves img down 20 px from starting location and back up in one fluid motion */
     0% {
-        filter: drop-shadow(0 0 0.2px #D3D3D3); /* Shadow with the shape of the object */
+        filter: drop-shadow(0 0 0.2px darkgrey); /* Shadow with the shape of the object */
         transform: translatey(0px);
     }
 
     50% {
-        filter: drop-shadow(0 5px 0.2px #D3D3D3);
+        filter: drop-shadow(0 5px 0.2px darkgrey);
         transform: translatey(-20px);
     }
 
     100% {
-        filter: drop-shadow(0 0 0.2px #D3D3D3);
+        filter: drop-shadow(0 0 0.2px darkgrey);
         transform: translatey(0px);
     }
 }
@@ -128,7 +128,7 @@ ul {
     bottom: 0;
     left: 47.5%;
     width: 8em;
-    z-index: 2;
+    z-index: 5;
 
     animation: float 1.6s ease-in-out infinite; /* calls the float animation, sets it to have a run time of 1.6 secs per loop, gives it a slow start and end, and runs it infinitely */
 }
@@ -265,14 +265,17 @@ p {
     font: 16px 'Baloo Tammudu 2', cursive;
     font-weight: bold;
     color: whitesmoke;
-    background-color: #003F09;
+    background-color: maroon;
+    opacity: 0.4;
     display: inline-block;
     text-align: center;
     border-radius: 4px;
     position: relative;
     height: 75px;
-    z-index: 1000;
+    z-index: 2;
+    border: 0;
 }
+
 #interviewRasmusBtn {
     left: -550px;
     top: 200px;
@@ -287,6 +290,7 @@ p {
 .btn-play-pause:hover {
     cursor: pointer;
     background-color: maroon;
+    opacity: 1;
 }
 
 

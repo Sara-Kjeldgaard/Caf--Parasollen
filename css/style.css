@@ -19,7 +19,7 @@ html, body, main {
     margin: 0;
 }
 /******************************************************************** 
-***************************** VIDEO ********************************/
+***************************** Landing Page *************************/
 #landingpage {
     position: absolute;
     top: 0;
@@ -58,7 +58,7 @@ html, body, main {
 ul {
     list-style-type: none;
     display: flex;
-    padding: 0;
+    padding: 100% 0 0 0;
     width: 100%;
     flex-direction: column;
 }
@@ -68,7 +68,8 @@ ul {
     width: auto;
     z-index: 2; /* Stay at the top of other content */
     right: 0; /* Keep right */
-    top: 40%; /*40% down on the page, approx. centered*/
+    top: 0; /*40% down on the page, approx. centered*/
+    bottom: 0;
     background-color: rgba(255,255,255,0.3);
     /* TEMPORARY */
     overflow-x: hidden;
@@ -132,54 +133,6 @@ ul {
 
     animation: float 1.6s ease-in-out infinite; /* calls the float animation, sets it to have a run time of 1.6 secs per loop, gives it a slow start and end, and runs it infinitely */
 }
-
-/**
-* Back to Top button by Matthew Cain (https://codepen.io/matthewcain/pen/ZepbeR)
-**/
-#button {
-    display: inline-block;
-    background-color: #FF9800;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    border-radius: 4px;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    transition: background-color .3s,
-        opacity .5s, visibility .5s;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 1000;
-}
-
-#button::after {
-    content: "\f077";
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 2em;
-    line-height: 50px;
-    color: #fff;
-}
-
-#button:hover {
-    cursor: pointer;
-    background-color: #333;
-}
-
-#button:active {
-    background-color: #555;
-}
-
-#button.show {
-    opacity: 1;
-    visibility: visible;
-}
-
-/**
-* END of Back to Top button
-**/
 
 
 
@@ -309,8 +262,38 @@ p {
     box-sizing: border-box;
 }
 
+.btn-play-pause {
+    font: 16px 'Baloo Tammudu 2', cursive;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: #003F09;
+    display: inline-block;
+    text-align: center;
+    border-radius: 4px;
+    position: relative;
+    height: 75px;
+    z-index: 1000;
+}
+#interviewRasmusBtn {
+    left: -550px;
+    top: 200px;
+}
+
+
+#interviewAllanBtn {
+    left: 550px;
+    top: 210px;
+}
+
+.btn-play-pause:hover {
+    cursor: pointer;
+    background-color: maroon;
+}
+
+
 /***********************************************/
 /****** stylesheet for page 3: quotes **********/
+
 
 #quotesContent {
     display: flex;

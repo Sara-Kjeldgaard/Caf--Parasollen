@@ -11,32 +11,32 @@ $(document).ready(function () { // kører så snart DOM er klar
     // ... din kode herfra ...
 
     /**
-     * Back to Top button by Matthew Cain (https://codepen.io/matthewcain/pen/ZepbeR)
-     **/
-    var btn = $('#button');
-
-    $(window).scroll(function () {
-        // here we call the fuktion makeParallaxScroll
-        makeParallaxScroll('#collage1', 9);
-        makeParallaxScroll('#collage2', 7);
-        makeParallaxScroll('#collage3', 5);
-        
-        if ($(window).scrollTop() > 300) {
-            btn.addClass('show');
-        } else {
-            btn.removeClass('show');
+    * Video controls (find method to do it in ONE function rather than 2)
+    **/
+    var $btnRasmus = $("#interviewRasmusBtn");
+    var videoRasmus = $("#interviewVideoRasmus").get(0); /* get(0) henter den følgende funktion i JavaScript, frem for i JQuery */
+    
+    $btnRasmus.on('click', function () {
+        if (videoRasmus.paused) {
+            videoRasmus.play();
+        }
+        else {
+            videoRasmus.pause();
         }
     });
-
-    btn.on('click', function (e) {
-        e.preventDefault();
-        $('html, body').animate({
-            scrollTop: 0
-        }, '300');
+    
+    var $btnAllan = $("#interviewAllanBtn");
+    var videoAllan = $("#interviewVideoAllan").get(0); /* get(0) henter den følgende funktion i JavaScript, frem for i JQuery */
+    
+    $btnAllan.on('click', function () {
+        if (videoAllan.paused) {
+            videoAllan.play();
+        }
+        else {
+            videoAllan.pause();
+        }
     });
-    /**
-     * END of Back to Top Button by Matthew Cain
-     **/
+    
 
   
 // We make a reusable function, that we can call as many times as we want.

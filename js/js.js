@@ -38,6 +38,33 @@ $(document).ready(function () { // kører så snart DOM er klar
     });
     
 
+    /**
+    * Audio controls (again, find method to do it in ONE function rather than 2)
+    **/
+    var $audioIconPhilip = $("#audioIconPhilip");
+    var audioPhilip = $("#audioPhilip").get(0); /* get(0) henter den følgende funktion i JavaScript, frem for i JQuery */
+    
+    $audioIconPhilip.on('click', function () {
+        if (audioPhilip.paused) {
+            audioPhilip.play();
+        }
+        else {
+            audioPhilip.pause();
+        }
+    });
+    
+    var $audioIconVeyis = $("#audioIconVeyis");
+    var audioVeyis = $("#audioVeyis").get(0); /* get(0) henter den følgende funktion i JavaScript, frem for i JQuery */
+    
+    $audioIconVeyis.on('click', function () {
+        if (audioVeyis.paused) {
+            audioVeyis.play();
+        }
+        else {
+            audioVeyis.pause();
+        }
+    });
+    
   
 // We make a reusable function, that we can call as many times as we want.
     /* We use function and give it a name. Then we name two parameters whatToLookFor = the selector for the element we look for (img), howMuchEffect = The higher the number, the slower it will scroll*/

@@ -334,10 +334,23 @@ footer{
     position: center;
 
 }
+#button{
+  background-color: rgba(188, 206, 216, 0.7);
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    align-items: center;
+  
+}
 
 #socialmedie {
     display: flex;
-    align-items: flex-start;
+    align-items:center;
+    margin-bottom: auto;
+
 }
 .icons {
     width: 70px;

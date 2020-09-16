@@ -26,7 +26,7 @@ html, body, main {
     height: 100%;
     overflow: hidden;
     justify-content: center;
-    padding-top: 0;
+    padding: 0;
     z-index: 2;
 
 }
@@ -148,6 +148,8 @@ ul {
     flex-direction: column;
     align-items: center;
     padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content: center;
 }
 
 body  {
@@ -242,8 +244,7 @@ p {
 /****** stylesheet for page 2: videos **********/
 
 #interview {
-    padding-top: 200px;
-    box-sizing: border-box;
+   justify-content: center;
 }
 
 .video-interview {

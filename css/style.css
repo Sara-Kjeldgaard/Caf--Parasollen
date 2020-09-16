@@ -225,6 +225,11 @@ p {
 
 }
 
+#backgroundPicture2 {
+    background-image: url(/images/kitchen.jpg);
+
+}
+
 .fixed-background {
     background-size: cover;
     background-position: center;
@@ -302,6 +307,39 @@ p {
     width: 45%;
     padding: 0 20px;
     box-sizing: border-box;
+}
+
+/***********************************************/
+/****** stylesheet for page 3: quotes **********/
+
+#quotesContent {
+    display: flex;
+    
+}
+
+.quotes-and-pic {
+    font-size: 20px;
+    width: 400px;
+    
+}
+
+.quotes-and-pic q {
+    display: block;
+}
+
+.quotes-and-pic cite {
+    font-weight: bold;
+}
+
+.interview-picture {
+    width: 100%;
+}
+.interview-picture img {
+    width: 100%;
+}
+
+.quotes-and-pic .icons {
+    width: 100px;
 }
 
 
